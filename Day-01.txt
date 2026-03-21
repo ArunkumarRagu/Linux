@@ -1,0 +1,36 @@
+whoami - Displays the currently logged-in username.
+
+id - Shows user ID (UID), group ID (GID), and group memberships.
+
+id root - Displays UID, GID, and groups for the root user.
+
+id -un - Prints only the username of the current user.
+
+pwd - Prints the current working directory.
+
+echo ~ - Displays the home directory path.
+
+ls - Lists files and directories in the current directory.
+
+ls -a - Lists all files including hidden ones (starting with .).
+
+ls -l - Lists files in long format (permissions, owner, size, date).
+
+ls -la - Combines -l and -a to show detailed info including hidden files.
+
+cd ~ - Changes directory to the home directory.
+
+cd Documents - Navigates into the Documents directory.
+
+touch test.txt - Creates an empty file named test.txt.
+
+mkdir testdir - Creates a new directory named testdir.
+
+echo "Tested" test1.txt - Prints "Tested" and "test1.txt" to terminal (does not write to file).
+
+echo "Tested" > test1.txt - Writes "Tested" into test1.txt (overwrites file).
+
+ls testdir test.txt Zoom - Lists specified files/directories.
+
+ls -l testdir - Shows detailed listing of contents inside testdir.
+
