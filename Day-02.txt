@@ -1,0 +1,17 @@
+cp test.txt test2.txt - Copies file "test.txt" to a new file "test2.txt"
+cp testdir testdir_copy - Attempts to copy a directory without recursive option (fails)
+cp -r testdir testdir_copy - Recursively copies directory "testdir" to "testdir_copy"
+mv test2.txt test2_1.txt - Renames "test2.txt" to "test2_1.txt"
+mv test2_1.txt testdir - Moves file into "testdir" directory
+ls testdir - Lists contents of "testdir"
+mv testdir/test2_1.txt ./test2.txt - Moves file back to current directory and renames it
+rm test2.txt - Deletes file "test2.txt"
+rmdir testdir_copy - Removes empty directory "testdir_copy"
+mkdir testdir - Attempts to create directory "testdir" (fails if it exists)
+mkdir testdir1 - Creates a new directory "testdir1"
+touch testdir1/test.txt - Creates an empty file inside "testdir1"
+rmdir testdir1 - Attempts to remove non-empty directory (fails)
+rmdir -r testdir1 - Invalid attempt to remove directory recursively using rmdir
+rm -r testdir1 - Recursively deletes directory "testdir1" and its contents
+rm -rf testdir - Forcefully and recursively deletes "testdir"
+
