@@ -1,0 +1,20 @@
+cp .zshrc ~/Desktop/zshrc-copy
+# Copy .zshrc file to Desktop with a new name
+
+cp -r ~/Code ~/Desktop
+# Recursively copy the Code directory to Desktop
+
+cp zshrc-copy zshrc-move
+# Copy zshrc-copy to a new file named zshrc-move
+
+mv zshrc-copy zshrc-move
+# Move (rename) zshrc-copy to zshrc-move (overwrites if exists)
+
+mv Code Code-move
+# Rename/move Code directory to Code-move
+
+rm -r zshrc-move
+# Remove zshrc-move file/directory recursively
+
+rm -rf Code-move
+# Forcefully remove Code-move directory and its contents
