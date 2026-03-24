@@ -1,0 +1,42 @@
+cat /tmp/hello
+Displays the contents of the file.
+
+cat -m /tmp/hello
+Invalid option; shows an error because "-m" is not supported.
+
+cat -n /tmp/hello
+Displays the file contents with line numbers.
+
+head -n1 /tmp/hello
+Shows the first 1 line of the file.
+
+head /tmp/hello
+Displays the first 10 lines of the file (default behavior).
+
+head -n2 /tmp/hello
+Shows the first 2 lines of the file.
+
+head -c1 /tmp/hello
+Displays the first 1 character of the file.
+
+head -c3 /tmp/hello
+Displays the first 3 characters of the file.
+
+tail -n1 /tmp/hello
+Shows the last 1 line of the file.
+
+tail -n2 /tmp/hello
+Shows the last 2 lines of the file.
+
+tail -c1 /tmp/hello
+Displays the last 1 character of the file.
+
+tail -c2 /tmp/hello
+Displays the last 2 characters of the file.
+
+diff file1 file2
+Compares two files line by line and shows differences.
+
+diff -r ~/Desktop ~/Code
+Recursively compares two directories and shows differences.
+
