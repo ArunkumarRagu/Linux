@@ -1,0 +1,42 @@
+touch example.txt - Create an empty file named example.txt
+
+ls - List files and directories in the current directory
+
+ls -l example.txt - Show detailed information (permissions, owner, size, date) of example.txt
+
+sudo chown root:root example.txt - Change the owner and group of example.txt to root
+
+mkdir -p new-dir/subdir - Create a directory and its subdirectory recursively
+
+echo "Hello, world" > new-dir/file1.txt - Create file1.txt and write text into it
+
+echo "Author file" > new-dir/subdir/file2.txt - Create file2.txt in subdir with content
+
+ls -lR new-dir - Recursively list all files and directories with details
+
+sudo chown -R root:root new-dir - Recursively change ownership of directory and its contents to root
+
+sudo chmod 700 example.txt - Set permissions so only owner can read, write, and execute
+
+mkdir ~/test-dir - Create a directory in the home folder
+
+chmod 700 ~/test-dir - Set directory permissions to allow access only to the owner
+
+ls -ld ~/test-dir - Show detailed information about the directory itself
+
+ls -l ~/test-dir - List contents of the directory
+
+ls -lR ~/test-dir - Recursively list directory contents
+
+chmod -R 755 ~/test-dir - Recursively set permissions (owner full, others read/execute)
+
+echo '#!/bin/bash\necho "Hello, World"' > script.sh - Create a shell script with a simple command
+
+ls -l script.sh - Show details of the script file
+
+./script.sh - Attempt to execute the script
+
+chmod u+x script.sh - Add execute permission for the file owner
+
+./script.sh - Run the script after making it executable
+
