@@ -1,0 +1,64 @@
+1. sudo useradd joker
+   → Creates a new user named "joker".
+   Abbreviation: useradd = user add
+
+2. sudo grep -w 'joker' /etc/passwd
+   → Searches for the exact word "joker" in the passwd file to verify user creation.
+   Abbreviation: grep = global regular expression print, -w = match whole word
+
+3. sudo useradd -m bob
+   → Creates a new user "bob" with a home directory.
+   Abbreviation: -m = create home directory
+
+4. sudo ls -ld /home/bob
+   → Lists details of bob’s home directory.
+   Abbreviation: ls = list, -l = long format, -d = directory itself
+
+5. sudo passwd joker
+   → Sets or changes password for user "joker".
+   Abbreviation: passwd = password
+
+6. sudo usermod -d /home/wayne joker
+   → Changes joker’s home directory to /home/wayne.
+   Abbreviation: usermod = user modify, -d = directory
+
+7. sudo grep -w 'joker' /etc/passwd
+   → Verifies updated home directory and user info.
+
+8. sudo usermod -s /bin/bash joker
+   → Changes joker’s default shell to bash.
+   Abbreviation: -s = shell
+
+9. sudo usermod -aG sudo joker
+   → Adds joker to the sudo group (grants admin privileges).
+   Abbreviation: -a = append, -G = group
+
+10. groups joker
+    → Displays groups that joker belongs to.
+
+11. su - joker
+    → Switches to joker user with login environment.
+    Abbreviation: su = switch user, - = login shell
+
+12. sudo cat /etc/shadow
+    → Displays encrypted passwords and account info.
+    Abbreviation: cat = concatenate (view file)
+
+13. sudo passwd -l joker
+    → Locks joker’s account (disables login).
+    Abbreviation: -l = lock
+
+14. sudo passwd -u joker
+    → Unlocks joker’s account.
+    Abbreviation: -u = unlock
+
+16. sudo userdel -r bob
+    → Deletes user "bob" and removes home directory.
+    Abbreviation: userdel = user delete, -r = remove home directory
+
+17. sudo grep -w 'bob' /etc/passwd
+    → Confirms bob is deleted.
+
+18. sudo ls -ld /home/bob
+    → Checks if bob’s home directory still exists.
+
