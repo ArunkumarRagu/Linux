@@ -1,0 +1,65 @@
+sudo grep -E '^(joker|batman):' /etc/passwd
+# Search for users 'joker' or 'batman' in /etc/passwd
+
+sudo useradd joker
+# Create a new user 'joker'
+
+sudo useradd -m gotham
+# Create a new user 'gotham' and create a home directory
+
+sudo useradd -m batman
+# Create a new user 'batman' and create a home directory
+
+sudo usermod -d /home/gotham batman
+# Change 'batman' user's home directory to /home/gotham
+
+sudo grep -E '^(joker|batman):' /etc/passwd
+# Verify the updated entries for 'joker' and 'batman'
+
+sudo passwd joker
+# Set or update the password for user 'joker'
+
+sudo passwd batman
+# Set or update the password for user 'batman'
+
+sudo passwd -S batman
+# Show status info of the 'batman' account password
+
+sudo usermod -d /home/arkham joker
+# Change 'joker' user's home directory to /home/arkham
+
+sudo usermod -s /bin/bash batman
+# Change 'batman' user's login shell to /bin/bash
+
+sudo grep -E '^(joker|batman):' /etc/passwd
+# Verify updated entries for 'joker' and 'batman'
+
+sudo userdel -r joker
+# Delete user 'joker' and remove home directory/mail (if exists)
+
+sudo userdel -r batman
+# Delete user 'batman' and remove home directory/mail (if exists)
+
+sudo grep -E '^(joker|batman):' /etc/passwd
+# Verify that 'joker' and 'batman' entries are removed
+
+man userdel
+# Open the manual page for 'userdel' command
+
+man deluser
+# Open the manual page for 'deluser' (if installed)
+
+ls /home/gotham
+# List contents of /home/gotham directory
+
+mkdir /home/gotham
+# Attempt to create /home/gotham directory (already exists)
+
+mkdir /home
+# Attempt to create /home directory (already exists)
+
+sudo userdel batman
+# Attempt to delete 'batman' user (fails if already deleted)
+
+sudo userdel -r batman
+# Attempt to delete 'batman' user and remove home/mail (fails if user does not exist)
