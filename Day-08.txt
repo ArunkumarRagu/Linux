@@ -1,0 +1,18 @@
+touch system_Report.txt - Creates an empty file named system_Report.txt
+touch system_report.txt - Creates an empty file named system_report.txt
+echo system_report.txt >> whoami - Appends the text "system_report.txt" to a file named whoami
+echo system_report.txt >> uname -a - Attempts to append text to file "uname" (incorrect usage with command)
+echo system_report.txt >> uptime - Appends the text "system_report.txt" to a file named uptime
+cat system_report.txt - Displays the contents of system_report.txt
+echo system_report.txt > whoami - Overwrites file "whoami" with the text "system_report.txt"
+vi system_report.txt - Opens system_report.txt in the vi editor
+echo whoami > system_report.txt - Writes the text "whoami" into system_report.txt (overwrites)
+echo uname -a > system_report.txt - Writes the text "uname -a" into system_report.txt (overwrites)
+echo uptime > system_report.txt - Writes the text "uptime" into system_report.txt (overwrites)
+echo whoami - Prints the text "whoami" to the terminal
+whoami - Displays the current logged-in username
+whoami > system_Report.txt - Writes current username into system_Report.txt
+whoami > system_report.txt - Writes current username into system_report.txt
+uname -a > system_report.txt - Writes detailed system information into system_report.txt
+uname -a >> system_report.txt - Appends system information to system_report.txt
+uptime >> system_report.txt - Appends system uptime information to system_report.txt
