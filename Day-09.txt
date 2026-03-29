@@ -1,0 +1,17 @@
+mkdir config - Create a new directory named "config"
+mkdir docs - Create a new directory named "docs"
+ls - List files and directories in the current location
+mv main_app.py src/ - Move main_app.py into the src directory
+mv config.json config - Move config.json into the config directory
+mv README.md docs - Move README.md into the docs directory
+cd config - Change directory to config
+cp config.json config.json.bak - Create a backup copy of config.json
+cat config.json - Display the contents of config.json
+cd .. - Move up one directory level
+mv shared_docs phoenix_project/docs - Move shared_docs into phoenix_project/docs
+cd phoenix_project/docs/shared_docs - Navigate to the shared_docs directory inside docs
+cd logs - Change directory to logs
+tar -czf old_logs.tar.gz app_2023-01-15.log db_2023-02-20.log - Compress specified log files into a tar.gz archive
+rm app_2023-01-15.log - Delete the specified log file
+rm db_2023-02-20.log - Delete the specified log file
+
