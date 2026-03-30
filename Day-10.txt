@@ -1,0 +1,39 @@
+cd config
+→ Changes the current directory to `config`.
+
+grep -i 'worker_processes' nginx.conf
+→ Searches case-insensitively for "worker_processes" inside `nginx.conf`.
+
+grep -i 'worker_processes' nginx.conf > ../error_report.txt
+→ Searches and redirects the output to a file named `error_report.txt` in the parent directory.
+
+cd ..
+→ Moves back to the parent directory.
+
+grep -i 'worker_processes' config/nginx.conf > ../error_report.txt
+→ Searches in a file using its relative path and saves output to parent directory.
+
+grep -i 'worker_processes' config/nginx.conf > error_report.txt
+→ Searches and saves the result to `error_report.txt` in the current directory.
+
+ls
+→ Lists all files and directories in the current directory.
+
+cat error_report.txt
+→ Displays the contents of `error_report.txt`.
+
+diff config/staging/app.conf config/production/app.conf
+→ Compares two files and shows their differences.
+
+diff config/staging/app.conf config/production/app.conf >> config_diff.txt
+→ Appends the differences between two files into `config_diff.txt`.
+
+diff /home/labex/project/server1_files /home/labex/project/server2_files
+→ Compares two directories and shows differences (non-recursively).
+
+diff /home/labex/project/server1_files /home/labex/project/server2_files >> missing_files.txt
+→ Appends directory differences to `missing_files.txt`.
+
+diff -r /home/labex/project/server1_files /home/labex/project/server2_files
+→ Recursively compares two directories and shows all differences.
+
