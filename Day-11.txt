@@ -1,0 +1,41 @@
+cd phoenix_project  
+→ Navigate into the phoenix_project directory.
+
+touch project_keys.txt  
+→ Create a new empty file named project_keys.txt.
+
+ls  
+→ List files and directories in the current folder.
+
+chown labex project_keys.txt  
+→ Change the owner of project_keys.txt to user "labex".
+
+chmod 500 project_keys.txt  
+→ Set file permissions to read and execute for owner only.
+
+chmod 600 project_keys.txt  
+→ Set file permissions to read and write for owner only.
+
+cd ..  
+→ Move up one directory level.
+
+sudo chown dev_lead phoenix_project  
+→ Change ownership of phoenix_project directory to user "dev_lead".
+
+sudo chown dev_lead:developers phoenix_project  
+→ Change owner to "dev_lead" and group to "developers".
+
+ls -ld phoenix_project  
+→ Display detailed information about the phoenix_project directory.
+
+sudo chmod 700 phoenix_project  
+→ Give full permissions to owner only for the directory.
+
+sudo chmod u+rwx phoenix_project  
+→ Ensure owner has read, write, and execute permissions.
+
+sudo chmod g+rx phoenix_project  
+→ Give group read and execute permissions.
+
+sudo chmod o= phoenix_project  
+→ Remove all permissions for others (public users).
