@@ -1,0 +1,14 @@
+chmod g+s src - Set the setgid bit so new files inherit the directory's group
+chmod 2770 src - Set permissions to rwxrws--- (setgid + full access for owner/group)
+chown dev_lead:developers src - Change owner to dev_lead and group to developers
+sudo chown dev_lead:developers src - Same as above with root privileges
+sudo passwd b.smith - Set or update password for user b.smith
+sudo grep "^b.smith:" /etc/shadow - View password hash entry for b.smith
+sudo usermod -a -G developers b.smith - Add b.smith to developers group
+groups b.smith - Display groups that b.smith belongs to
+id - Show current user identity and group memberships
+id b.smith - Show UID, GID, and groups for b.smith
+sudo grep "^b.smith:" /etc/group - Check group entry for b.smith
+sudo grep "^developers:" /etc/group - Check members of developers group
+sudo passwd -l j.doe - Lock the user account j.doe
+sudo grep "^j.doe:" /etc/shadow - Verify account lock status for j.doe
